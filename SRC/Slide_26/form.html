@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <form action="/comment" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" value="Bob" name="sender" minlength="3" maxlength="10" size="60">
+        </div> <BR>
+        <div>
+            <label for="msg">Message:</label>
+            <textarea id="msg" placeholder="Scrivi qui" name="message"></textarea>
+        </div> <br>
+
+        <div>
+            <label for="date">Data:</label>
+            <input type="date" name="data" id="date"> 
+        </div> <br>
+        
+        <div>
+            <label for="file">Inserire file:</label>
+            <input type="file" id="file" name="file" placeholder="trascinare file qui">
+        </div><br>
+        <div>
+
+            <input type="password" name="passowrd" id="passowrd" placeholder="Password">
+            <label for="password">Password</label>
+        </div><br>
+        <div>
+            <button type="reset" name="reset">RESET</button> 
+            <button type="submit" name="submit">SUBMIT</button>
+        </div><br>
+    </form>
+</body>
+
+</html>
