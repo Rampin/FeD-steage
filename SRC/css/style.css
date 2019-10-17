@@ -1,6 +1,7 @@
-table{color:red; font-size: 1cm;}
+table{color:red; font-size: 1cm; text-align: center; background-color: azure;}
+td{color:black}
 .blue{color:blue}
-.green{color:green}
+.green{color:green;}
 .TableTitle{color:saddlebrown;}
-.impact{font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+.impact{font-family:Impact, 'Arial Narrow Bold', sans-serif;}
 .arial{font-family: Arial, Helvetica, sans-serif;}
