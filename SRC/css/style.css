@@ -1,7 +1,40 @@
-table{color:red; font-size: 1cm; text-align: center; background-color: azure;}
-td{color:black}
-.blue{color:blue}
-.green{color:green;}
-.TableTitle{color:saddlebrown;}
-.impact{font-family:Impact, 'Arial Narrow Bold', sans-serif;}
-.arial{font-family: Arial, Helvetica, sans-serif;}
+table {
+    color: red;
+    font-size: 1cm;
+    text-align: center;
+    background-color: azure;
+    padding: 0.5cm;
+}
+
+td {
+    color: black
+}
+
+.blue {
+    color: blue
+}
+
+.green {
+    color: green;
+}
+
+.TableTitle {
+    color: saddlebrown;
+}
+
+.impact {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#button {
+    width: 5cm;
+    height: 4cm;
+    text-align: center;
+    background-color: burlywood;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1cm;
+}
