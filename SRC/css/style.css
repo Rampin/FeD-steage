@@ -4,6 +4,7 @@ table {
     text-align: center;
     background-color: azure;
     padding: 0.5cm;
+    border-color: black;
 }
 
 td {
@@ -37,4 +38,12 @@ td {
     background-color: burlywood;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1cm;
+}
+
+#Test { font-SIZE: 2cm;
+    color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-block-color: red;
+    padding: 0.5cm; 
+    margin: 0.5cm;
 }
