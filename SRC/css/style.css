@@ -1,6 +1,6 @@
-table{color:red}
+table{color:red; font-size: 1cm;}
 .blue{color:blue}
 .green{color:green}
 .TableTitle{color:saddlebrown;}
-.corsivo{font-style: italic;}
+.impact{font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 .arial{font-family: Arial, Helvetica, sans-serif;}
