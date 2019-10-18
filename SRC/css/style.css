@@ -38,12 +38,16 @@ td {
     background-color: burlywood;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1cm;
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #Test { font-SIZE: 2cm;
     color: blue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-block-color: red;
+    background-color: darkblue;
+    font-weight: 1000;
+    
     padding: 0.5cm; 
     margin: 0.5cm;
 }
