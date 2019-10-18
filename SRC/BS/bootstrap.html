@@ -11,9 +11,16 @@
         div {
             background-color: chartreuse;
         }
-        .yellow{color: darksalmon;
-        background-color: gainsboro;}
-        .table{text-align: center;}
+
+        .yellow {
+            color: darksalmon;
+            background-color: gainsboro;
+        }
+
+        .bordo {
+            text-align: center;
+            border: blue 1px;
+        }
     </style>
 </head>
 
@@ -24,15 +31,23 @@
         <p>ejpfjficjipfj ejfiwj i</p>
     </div>
     <div class="container-fluid table">
-        <div class="row">
-            <div class="col">1/1</div>
-            <div class="col yellow">2/1</div>
-            <div class="col">3/1</div>
+        <div class="row ">
+            <div class="col bordo">1/1</div>
+            <div class="col yellow bordo">2/1</div>
+            <div class="col bordo">3/1</div>
         </div>
+        <div class="row ">
+            <div class="col bordo">1/2</div>
+            <div class="col yellow bordo">2/2</div>
+            <div class="col bordo">3/2</div>
+        </div>
+    </div>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col">1/2</div>
-            <div class="col yellow">2/2</div>
-            <div class="col">3/2</div>
+            <div class="col-sm-2 col-md-3 col-lg-5 col-xl-1">1</div>
+            <div class="col-sm-4 col-md-3 col-lg-1 col-xl-5 yellow">2</div>
+            <div class="col-sm-4 col-md-3 col-lg-1 col-xl-5">3</div>
+            <div class="col-sm-2 col-md-3 col-lg-5 col-xl-1 yellow">4</div>
         </div>
     </div>
 </body>
