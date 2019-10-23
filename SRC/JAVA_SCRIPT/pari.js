@@ -33,5 +33,16 @@ console.log(isEven(-4) === undefined);
   let d=6;
   let t=3;
   Speed(d, t);
-  console.log(v);
+  /*
+  console.log(v);*/
+}
+
+{
+	function DigitSum(n) {
+		for(n; n>1; n/10){
+			
+
+			n=Math.floor(n/10)
+		}
+	}
 }
