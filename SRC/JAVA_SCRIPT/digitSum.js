@@ -16,4 +16,4 @@ function digitSum2(n) {
 }
 
 //console.log(digitSum(151));
-console.log(digitSum2(351));
+console.log(digitSum2(351)==9);
