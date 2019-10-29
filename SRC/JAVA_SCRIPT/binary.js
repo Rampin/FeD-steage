@@ -1,17 +1,17 @@
 function binarySum(left, right) {
-    let sum = []
+    let sum = [];
 
     let n1 = Array.from(left);
     let n2 = Array.from(right);
 
-    for (i = left.length-1; i >= 0; i--) {
-        sum[i+1] = 0;
-        left[i] = Number(left[i]);
-        right[i] = Number(right[i]);
+    for (i = left.length - 1; i >= 0; i--) {
+        sum[i + 1] = 0;
+        left[i] = (left[i]);
+        right[i] = (right[i]);
     }
 
     for (i = left.length - 1; i >= 0; i--) {
-        if ((n1[i] ==1 && n2[i] == 0) || (n1[i] == 0 && n2[i] == 1)) {
+        if ((n1[i] == 1 && n2[i] == 0) || (n1[i] == 0 && n2[i] == 1)) {
             if (sum[i + 1] == 1) {
                 sum[i + 1] = 0;
                 sum[i] = 1;
@@ -34,11 +34,11 @@ function binarySum(left, right) {
             sum[i] = 1;
         }
     }
-    sum=sum.join();
+    sum = sum.join('');
     
     return sum;
-    
+
 }
 
 
-console.log(binarySum("1000" , "1101"));
+console.log(binarySum("1001", "1101"));
