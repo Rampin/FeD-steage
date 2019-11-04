@@ -40,5 +40,5 @@ function binarySum(left, right) {
 
 }
 
-
+console.log(binarySum("100","101"))
 console.log(binarySum("1001", "1101"));

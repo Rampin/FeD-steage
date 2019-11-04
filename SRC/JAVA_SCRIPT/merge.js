@@ -25,4 +25,11 @@ function merge(left, right) {
 }
 
 
-console.log(merge([1, 2, 3], [3, 4, 6]));
+//console.log(merge([1, 2, 3], [3, 4, 6]));
+
+function mostWanted(data) {
+    data=Array.from(data);
+    
+    return data;
+}
+console.log(mostWanted('ciao come stai?'));
