@@ -108,18 +108,18 @@ function changefont() {
     target.textContent = 'Torna bianco scorrendo';
     document.getElementById("b").textContent = 'CIAO';
     document.getElementById("B").textContent = 'COME STAI?';
-    let image=document.getElementById("image");
-    image.style.width=(image.width - 5)+"px";
+    let image = document.getElementById("image");
+    image.style.width = (image.width - 20) + "px";
     document.getElementById("A1").textContent = 'bene';
     document.getElementById("A2").textContent = 'male';
     document.getElementById("A3").textContent = 'Così così';
-    
-} 
-function changeImage(){
-    let image=document.getElementById("image");
-    if(document.getElementById("A").value=='male') {image.src = "../img/cane_triste.jpg";} 
-    if(document.getElementById("A").value=='bene') {image.src = "../img/cane.jpg";}
-    if(document.getElementById("A").value=='così') {image.src = "../img/cane2.jpg";}
+
+}
+function changeImage() {
+    let image = document.getElementById("image");
+    if (document.getElementById("A").value == 'male') { image.src = "../img/cane_triste.jpg"; }
+    if (document.getElementById("A").value == 'bene') { image.src = "../img/cane.jpg"; }
+    if (document.getElementById("A").value == 'così') { image.src = "../img/cane2.jpg"; }
 }
 
 function returnwhite() {
@@ -127,4 +127,33 @@ function returnwhite() {
     target = document.getElementById("div");
     target.textContent = 'CAMBIA COLORE';
 
+}
+
+function getInfo() {
+    let request = new XMLHttpRequest();
+    request.onload = callback;
+    request.open("GET", "tom.txt");
+    request.send();
+}
+
+function callback() {
+    let target = document.getElementById('target2');
+    if (this.status != 200) {
+        target.value += "[" + this.status + "]\n";
+        return;
+    }
+    let text = this.responseText;
+    let result = '';
+    for (i = 0; i < text.length; i++) {
+            if (text[i] == ':') { 
+                while (text[i+1] != ','){
+                    i++;
+                    result += text[i];
+                    
+                }
+                result+= '\n';
+            }
+    
+    }
+    target.value = result;
 }
