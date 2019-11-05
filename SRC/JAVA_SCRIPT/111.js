@@ -88,10 +88,43 @@ function check() {
 }
 
 function color() {
-    let colore=document.getElementById("y").value;
-    if(colore===''){
-        document.bgColor='lightblue';
+    let colore = document.getElementById("y").value;
+    if (colore === '') {
+        document.bgColor = 'lightblue';
     }
-    else {document.bgColor=colore;}
+    else { document.bgColor = colore; }
+
+}
+
+function color2() {
+    document.bgColor = document.getElementById("A").value;
+
+
+}
+
+function changefont() {
+    document.bgColor = 'red';
+    target = document.getElementById("div");
+    target.textContent = 'Torna bianco scorrendo';
+    document.getElementById("b").textContent = 'CIAO';
+    document.getElementById("B").textContent = 'COME STAI?';
+    let image=document.getElementById("image");
+    image.style.width=(image.width - 5)+"px";
+    document.getElementById("A1").textContent = 'bene';
+    document.getElementById("A2").textContent = 'male';
+    document.getElementById("A3").textContent = 'Così così';
+    
+} 
+function changeImage(){
+    let image=document.getElementById("image");
+    if(document.getElementById("A").value=='male') {image.src = "../img/cane_triste.jpg";} 
+    if(document.getElementById("A").value=='bene') {image.src = "../img/cane.jpg";}
+    if(document.getElementById("A").value=='così') {image.src = "../img/cane2.jpg";}
+}
+
+function returnwhite() {
+    document.bgColor = 'white';
+    target = document.getElementById("div");
+    target.textContent = 'CAMBIA COLORE';
 
 }

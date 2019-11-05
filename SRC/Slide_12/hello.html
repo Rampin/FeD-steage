@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <!-- my hello page -->
 <html>
+
 <head>
       <title>Ciao</title>
       <script src="../JAVA_SCRIPT/111.js"></script>
 </head>
+
 <body>
       <p>Hello world! Ciao</p>
 
@@ -13,15 +15,28 @@
 
       <form action="action" method="GET" onsubmit="return check();">
             <input id="x" type="text">
-            <button>OK</button>
-            </form>
+            <button id='b'>OK</button>
+      </form>
 
-<br><br><br>
-            
-                 <input type="text" id="y">
-                  <button onclick="color();"> OK </button>
-                  
-            
+      <br><br><br>
+
+      <input type="text" id="y">
+      <button onclick="color();" id="B"> OK </button>
+
+      
+      <select id="A" onchange="changeImage();">
+            <option id="A1" value="bene">RED</option>
+            <option id="A2" value="male">BLUE</option>
+            <option id="A3" value="così">GREEN</option>
+      </select>
+      <br>
+      <br>
+      <br>
+      <div id="div" onmouseover="changefont();" onmouseout="returnwhite();"> CAMBIO DI COLORE </div>
+      <br><br><br>
+      <img id="image" src='../img/cane.jpg'> 
+      <br><br><br>
 
 </body>
+
 </html>
