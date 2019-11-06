@@ -27,4 +27,4 @@ function fibonacci2(x) {
 
 }
 
-console.log(fibonacci2(10));
+console.log(fibonacci(10));

@@ -8,9 +8,11 @@ body{
 #error{ 
     color: red;
     font-weight: bold;
-    font-size: 300%;
+   
     font-family: 'Impact';
+    font-size: 3vw;
 }
+
 
 #box{
     background-color:rgba(0, 0, 0, 0.1);
@@ -20,8 +22,4 @@ body{
 
 #image{
     max-width: 90%;
-}
-
-#error{
-    font-size: 3vw;
 }
