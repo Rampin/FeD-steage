@@ -1,0 +1,27 @@
+.center {text-align: center;
+margin:0 auto}
+
+body{ 
+    background-color: lightblue;
+}
+
+#error{ 
+    color: red;
+    font-weight: bold;
+    font-size: 300%;
+    font-family: 'Impact';
+}
+
+#box{
+    background-color:rgba(0, 0, 0, 0.1);
+   margin-right: 25%;
+   margin-left: 25%;
+}
+
+#image{
+    max-width: 90%;
+}
+
+#error{
+    font-size: 3vw;
+}
