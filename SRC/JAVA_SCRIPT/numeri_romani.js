@@ -18,18 +18,47 @@ function getdata() {
     let num = document.getElementById("numero").value;
     if (num > 3999) {
         document.getElementById("image").src = "../img/giuliocesare.gif";
-        document.getElementById("error").textContent='SELECT A NUMBER BETWEEN 1 AND 3999!';
-        }
+        document.getElementById("error").textContent = 'SELECT A NUMBER BETWEEN 1 AND 3999!';
+    }
     else {
         let res = romanize(num);
         document.getElementById("result").value = res;
+
+    }
+    if (num == 69) {
+        document.getElementById("image").src = "../img/nice.gif";
+
     }
     console.log('Done!');
 }
 
+function getdata2(e) {
+    if (e.keyCode === 13) {
+    let num = document.getElementById("numero").value;
+    if (num > 3999) {
+        document.getElementById("image").src = "../img/giuliocesare.gif";
+        document.getElementById("error").textContent = 'SELECT A NUMBER BETWEEN 1 AND 3999!';
+    }
+    else {
+        let res = romanize(num);
+        document.getElementById("result").value = res;
+
+    }
+    if (num == 69) {
+        document.getElementById("image").src = "../img/nice.gif";
+
+    }
+    console.log('Done!');
+}
+}
+
+
+
 function remove() {
     let image = document.getElementById("image");
     image.src = "";
-    document.getElementById("error").textContent='';
+    document.getElementById("error").textContent = '';
+    document.getElementById("result").value = '';
+
 }
 
