@@ -1,6 +1,5 @@
 {
     "Name" : "Tom",
     "Job" : "Developer",
-    "Programs" : ["JS","JAVA","CSS"],
-
+    "Programs" : ["JS","JAVA","CSS"]
 }

@@ -4,13 +4,19 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>ROMAN CONVERTER</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="/JAVA_SCRIPT/numeri_romani.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/romanConverter.css" />
+
+   
+
 </head>
 
 <body>
+
     <br>
     <div id="box"><br>
         <div class="center">
@@ -19,7 +25,7 @@
             <br><br>
         </div>
         <div class="center" class="container-fluid">
-            <input type="number" id="numero" placeholder="Number to Convert" onclick="remove();" onkeypress="getdata2(e);">
+            <input type="number" id="numero" placeholder="Number to Convert" onclick="remove();">
             <button id="button" onclick="getdata();" type="button" class="btn btn-secondary">CONVERT</button>
             <input type="text" id="result" readonly>
         </div>

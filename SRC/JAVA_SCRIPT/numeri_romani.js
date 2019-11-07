@@ -32,8 +32,13 @@ function getdata() {
     console.log('Done!');
 }
 
-function getdata2(e) {
-    if (e.keyCode === 13) {
+
+$(function() {$('input').keypress(getdata2)});
+
+    function getdata2(event){
+    console.log('Tasto pigiato!');
+    if(event.key == 'Enter') {
+    console.log('Enter riconosciuto');
     let num = document.getElementById("numero").value;
     if (num > 3999) {
         document.getElementById("image").src = "../img/giuliocesare.gif";
@@ -51,8 +56,6 @@ function getdata2(e) {
     console.log('Done!');
 }
 }
-
-
 
 function remove() {
     let image = document.getElementById("image");
