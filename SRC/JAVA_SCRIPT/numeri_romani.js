@@ -33,28 +33,28 @@ function getdata() {
 }
 
 
-$(function() {$('input').keypress(getdata2)});
+$(function () { $('input').keypress(getdata2) });
 
-    function getdata2(event){
+function getdata2(event) {
     console.log('Tasto pigiato!');
-    if(event.key == 'Enter') {
-    console.log('Enter riconosciuto');
-    let num = document.getElementById("numero").value;
-    if (num > 3999) {
-        document.getElementById("image").src = "../img/giuliocesare.gif";
-        document.getElementById("error").textContent = 'SELECT A NUMBER BETWEEN 1 AND 3999!';
-    }
-    else {
-        let res = romanize(num);
-        document.getElementById("result").value = res;
+    if (event.key == 'Enter') {
+        console.log('Enter riconosciuto');
+        let num = document.getElementById("numero").value;
+        if (num > 3999) {
+            document.getElementById("image").src = "../img/giuliocesare.gif";
+            document.getElementById("error").textContent = 'SELECT A NUMBER BETWEEN 1 AND 3999!';
+        }
+        else {
+            let res = romanize(num);
+            document.getElementById("result").value = res;
 
-    }
-    if (num == 69) {
-        document.getElementById("image").src = "../img/nice.gif";
+        }
+        if (num == 69) {
+            document.getElementById("image").src = "../img/nice.gif";
 
+        }
+        console.log('Done!');
     }
-    console.log('Done!');
-}
 }
 
 function remove() {

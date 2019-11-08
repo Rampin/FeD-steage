@@ -35,10 +35,10 @@ function binarySum(left, right) {
         }
     }
     sum = sum.join('');
-    
+
     return sum;
 
 }
 
-console.log(binarySum("100","101"))
+console.log(binarySum("100", "101"))
 console.log(binarySum("1001", "1101"));
