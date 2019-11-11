@@ -40,6 +40,6 @@ class Teddy extends Toy {
         return super.fullInfo() + 'is Teddy';
     }
 }
-let Brushable = [new Dog('spike', 'dog'), new Cat('garfield', 'cat'), new Cat('romeo', 'cat'), new Dog('cane', 'dog'), new Teddy('Teddi'), new Teddy('Teddy1')];
-Brushable.forEach((fa) => { console.log(fa.fullInfo()); });
+let arr = [new Dog('spike', 'dog'), new Cat('garfield', 'cat'), new Cat('romeo', 'cat'), new Dog('cane', 'dog'), new Teddy('Teddi'), new Teddy('Teddy1')];
+arr.forEach((fa) => { console.log(fa.fullInfo()); });
 //# sourceMappingURL=FurrredAnimal.js.map
