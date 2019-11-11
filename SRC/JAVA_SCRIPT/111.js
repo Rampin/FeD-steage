@@ -145,15 +145,15 @@ function callback() {
     let text = this.responseText;
     let result = '';
     for (i = 0; i < text.length; i++) {
-            if (text[i] == ':') { 
-                while (text[i+1] != ','){
-                    i++;
-                    result += text[i];
-                    
-                }
-                result+= '\n';
+        if (text[i] == ':') {
+            while (text[i + 1] != ',') {
+                i++;
+                result += text[i];
+
             }
-    
+            result += '\n';
+        }
+
     }
     target.value = result;
 }
